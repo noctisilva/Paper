@@ -133,7 +133,7 @@ class WishlistViewController: UIViewController {
     }
     
     func delete(index: Int){
-        let id = "\(books[index].title ?? "")\(books[index].isbn?[0] ?? "")"
+        let id = "\(books[index].title ?? "")\(books[index].isbn?.first ?? "")"
         let realm = try! Realm()
         guard let objects = realm.objects(BookDBO.self).filter("id = \"\(id)\" ").first else { return  }
         try! realm.write {

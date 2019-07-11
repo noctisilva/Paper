@@ -49,7 +49,7 @@ struct Book: Codable {
     static func from(book: Book, realm: Realm) -> BookDBO {
         let book1: BookDBO = {
             let it = BookDBO()
-            it.id = ("\(book.title ?? "")\(book.isbn?[0] ?? "")")
+            it.id = ("\(book.title ?? "")\(book.isbn?.first ?? "")")
             it.title = book.title
             it.year = book.first_publish_year
             it.author_name?.append(objectsIn: book.author_name ?? [])
