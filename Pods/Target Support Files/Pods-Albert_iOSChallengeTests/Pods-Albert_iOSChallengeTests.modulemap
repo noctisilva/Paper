@@ -1,0 +1,6 @@
+framework module Pods_Albert_iOSChallengeTests {
+  umbrella header "Pods-Albert_iOSChallengeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
