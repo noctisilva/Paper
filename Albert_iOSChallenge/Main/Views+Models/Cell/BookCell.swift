@@ -89,8 +89,7 @@ class BookCell: UITableViewCell {
         
         NSLayoutConstraint.activate([
             bcm.year.centerYAnchor.constraint(equalTo: bcm.author.centerYAnchor),
-            bcm.year.leftAnchor.constraint(equalTo: bcm.author.rightAnchor, constant: 5),
-            bcm.year.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -100)
+            bcm.year.leftAnchor.constraint(equalTo: bcm.author.rightAnchor, constant: 5)
         ])
         
         NSLayoutConstraint.activate([

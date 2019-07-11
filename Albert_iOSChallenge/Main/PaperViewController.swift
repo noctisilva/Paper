@@ -39,7 +39,7 @@ class PaperViewController: UIViewController {
         super.viewDidAppear(animated)
         
         navigationController?.navigationBar.alpha = 0.0
-        paperObjects.descriptionPaperLabel.text = "Search for title, author, etc."
+        paperObjects.descriptionPaperLabel.text = "Search for title of a book!"
         paperObjects.paperSearch.becomeFirstResponder()
     }
     

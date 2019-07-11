@@ -39,7 +39,7 @@ class PaperObejcts: NSObject{
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font =  UIFont(name: "AppleSDGothicNeo-SemiBold", size: 12)
-        label.text = "Search for title og a book!"
+        label.text = "Search for title of a book!"
         label.textColor = UIColor(rgb: 0x2d3561)
         label.backgroundColor = .clear
         label.textAlignment = .left
@@ -122,7 +122,7 @@ class PaperObejcts: NSObject{
         button.isEnabled = true
         button.layer.masksToBounds = true
         button.backgroundColor = UIColor(rgb: 0x7189bf)
-        button.setTitle("Search", for: .normal)
+        button.setTitle("Title", for: .normal)
         button.titleLabel?.font =  UIFont(name: "AppleSDGothicNeo-SemiBold", size: 12)
         button.setTitleColor(.white, for: .normal)
         button.setTitleColor(.gray, for: .highlighted)

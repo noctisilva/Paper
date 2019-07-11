@@ -9,13 +9,14 @@
   - User will not be able to add item they already added to wishlist if it is the same item
   - User can decide to search for a title or an author
 
-### Future Implementations given time
+### Future Implementations given time (Upon Testing)
   - Keep track of URLSessions to not clog request calls and default a timeout that could crash the app
   - Filter and sorting in the tableviews
   - Display on UI that book is already in the wishlist
   - Do further data mining and get better useful data
   - Optimize NSConstraint anchor layout
-
+  - Most definitely should use a progress bar next time
+  
 ### What I used
   - Realm
   - SwiftyJSON

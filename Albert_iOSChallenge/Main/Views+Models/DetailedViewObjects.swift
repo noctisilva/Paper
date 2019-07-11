@@ -111,22 +111,6 @@ class DetailedViewObjects: NSObject{
         label.numberOfLines  = 2
         return label
     }()
-    
-    var paperButton: UIButton = {
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.layer.cornerRadius = 25
-        button.clipsToBounds = true
-        button.isEnabled = true
-        button.layer.masksToBounds = true
-        button.backgroundColor = UIColor(rgb: 0x7189bf)
-        button.setTitle("Search", for: .normal)
-        button.titleLabel?.font =  UIFont(name: "AppleSDGothicNeo-SemiBold", size: 15)
-        button.setTitleColor(.white, for: .normal)
-        button.setTitleColor(.gray, for: .highlighted)
-        return button
-    }()
-    
     var bookmarkButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
